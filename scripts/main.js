@@ -23,9 +23,9 @@ function endGame() {
 	context.fillStyle = "blue";
 	context.textAlign = "center";
 	context.font = "30px Arial";
-	if (line >= 10 && line < 15) {
+	if (line > 10 && line <= 15) {
 		context.fillText("You got the small reward!", 200, 175);
-	} else if (line >= 15) {
+	} else if (line > 15) {
 		context.fillText("You got the big reward!", 200, 175);
 	} else {
 		context.fillText("You got to line " + (line - 1) + "!", 200, 175);
